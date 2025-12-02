@@ -20,7 +20,7 @@ export default function Navbar() {
         </div>
 
         <button className="flex items-center gap-2 px-3 py-1 rounded-md hover:bg-gray-100">
-          <img src="/avatar-placeholder.png" alt="avatar" className="w-8 h-8 rounded-full object-cover"/>
+          <img src={`${import.meta.env.BASE_URL}avatar-placeholder.png`} alt="avatar" className="w-8 h-8 rounded-full object-cover"/>
           <span className="text-sm">Admin</span>
         </button>
       </div>

@@ -17,8 +17,11 @@ export default function GenderMonthlySalesChart() {
   const [chartData, setChartData] = useState<any>(null)
 
   useEffect(() => {
-    fetch('/data/cleaned_output.json')
-      .then(r => r.json())
+    fetch(`${import.meta.env.BASE_URL}data/cleaned_output.json`)
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`)
+        return res.json()
+      })
       .then((data: RecordRow[]) => {
         const monthsSet = new Set<string>()
         data.forEach(r => { if (r.year_month) monthsSet.add(r.year_month) })

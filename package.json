@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://1010jg.github.io/my-react-app/",
+  "homepage": "https://1010jg.github.io/my-react-app",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
