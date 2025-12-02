@@ -1,8 +1,7 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
+import Navbar from './Navbar'
+import Sidebar from './Sidebar'
 
-export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+export default function DashboardLayout({ children }: { children: any }) {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
@@ -13,5 +12,5 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         </main>
       </div>
     </div>
-  );
+  )
 }

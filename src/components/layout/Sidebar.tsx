@@ -1,6 +1,4 @@
-import React from "react";
-
-type NavItem = { name: string; href?: string; icon?: React.ReactNode };
+type NavItem = { name: string; href?: string; icon?: any };
 
 const items: NavItem[] = [
   { name: "Overview", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M3 12h18M3 6h18M3 18h18"/></svg> },
@@ -15,11 +13,7 @@ export default function Sidebar() {
       <div className="p-4 text-lg font-bold">Brand</div>
       <nav className="px-2">
         {items.map((it) => (
-          <a
-            key={it.name}
-            href="#"
-            className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-100 text-sm"
-          >
+          <a key={it.name} href="#" className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-100 text-sm">
             <span className="text-gray-600">{it.icon}</span>
             <span>{it.name}</span>
           </a>
@@ -27,5 +21,5 @@ export default function Sidebar() {
       </nav>
       <div className="mt-auto p-4 text-xs text-gray-500">© {new Date().getFullYear()}</div>
     </aside>
-  );
+  )
 }

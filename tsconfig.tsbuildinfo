@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/charts/gendermonthlysaleschart.tsx","./src/components/layout/dashboardlayout.tsx","./src/components/layout/navbar.tsx","./src/components/layout/sidebar.tsx","./src/lib/utils.ts","./src/pages/dashboardpage.tsx"],"version":"5.9.3"}

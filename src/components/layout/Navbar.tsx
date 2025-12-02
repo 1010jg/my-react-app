@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Navbar() {
   return (
     <header className="h-16 bg-white border-b flex items-center px-4 shadow-sm">
@@ -27,5 +25,5 @@ export default function Navbar() {
         </button>
       </div>
     </header>
-  );
+  )
 }

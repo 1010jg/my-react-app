@@ -1,4 +1,3 @@
-import React from 'react'
 import GenderMonthlySalesChart from '@/components/charts/GenderMonthlySalesChart'
 
 export default function DashboardPage() {
