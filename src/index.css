@@ -1,0 +1,4 @@
+/* Tailwind v4 import for Vite */
+@import "tailwindcss";
+
+:root { --primary: #2563eb; }
